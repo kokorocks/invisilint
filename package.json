@@ -1,0 +1,55 @@
+{
+  "name": "InvisiLint",
+  "displayName": "InvisiLint",
+  "description": "A VSCode extension that identifies hidden ASCII and allows replacement or deletion and renders a red warning outline.",
+  "version": "0.2.1",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Security"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+"contributes": {
+  "commands": [
+    {
+      "command": "InvisiLint.cleanInvisibleAscii",
+      "title": "Clean Invisible Characters"
+    }
+  ],
+  "configuration": {
+    "title": "InvisiLint",
+    "properties": {
+      "InvisiLint.enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable or disable invisible character detection"
+      },
+      "InvisiLint.useByteHex": {
+        "type": "boolean",
+        "default": false,
+        "description": "Use byte-hex format (AA) instead of Unicode U+XXXX"
+      },
+      "InvisiLint.excludedFiles": {
+        "type": "array",
+        "default": [],
+        "items": { "type": "string" },
+        "description": "File extensions to ignore (example: .log, .txt)"
+      },
+      "InvisiLint.highlightColor": {
+        "type": "string",
+        "default": "rgba(255,0,0,0.6)",
+        "description": "Color for invisible character highlights"
+      },
+      "InvisiLint.showHexAfter": {
+        "type": "boolean",
+        "default": true,
+        "description": "Show hex label after each invisible character"
+      }
+    }
+  }
+}
+}
