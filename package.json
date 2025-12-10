@@ -2,6 +2,7 @@
   "name": "InvisiLint",
   "displayName": "InvisiLint",
   "description": "A VSCode extension that identifies hidden ASCII and allows replacement or deletion and renders a red warning outline.",
+  "icon":"media/invisilint-logo.png",
   "repository": {
     "url": "https://github.com/kokorocks/invisilint",
     "type": "git"
@@ -11,7 +12,7 @@
     "vscode": "^1.106.1"
   },
   "categories": [
-    "Security"
+    "Other"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -60,4 +61,4 @@
     }
   }
 }
-}
+} 
