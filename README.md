@@ -48,8 +48,6 @@ Settings include:
 
 ## Demo Video
 
-You can embed a demo video to show how the extension works:
-
 <video width="320" height="240" controls>
   <source src="./media/invisalint-example.mp4" type="video/mp4" >
 </video>
